@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container  {
+            display: flex;
+            width: 300px;
+            height: 400px;
+            background-color: lightblue;
+            flex-direction: column;
+            transition: all ease-in .30s;
+        }
+        .q1 {
+          display: flex;
+          height: 80%;
+          background-color: rgb(166, 159, 223);
+          margin: 10px;
+        }
+        .q2 {
+          display: flex;
+          justify-content: space-around;
+          height: 20%;
+        } 
+        .w {
+          width: 50%;
+          margin: 10px;
+          background-color: rgb(188, 255, 233);
+        }
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        .container:hover {
+          box-shadow: 4px 3px 0px 1px rgb(196, 178, 171);
+          transform: translate(-2px, -40px);
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="q1"></div>
+  <div class="q2">
+    <div class="w"></div>
+    <div class="w"></div>
+  </div>
+</div>
+</body>
+</html>

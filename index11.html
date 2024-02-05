@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завод Атомных Бомб</title>
+    <style>
+      .nav {
+         background-color: rgb(161, 20, 20);
+         width: 100vw;
+         height: 10vh;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: fixed;
+         top: 0;
+      }
+      body {margin: 0;}
+      h1 {
+         color: rgb(255, 221, 31);
+         font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+         font-size: xx-large;
+      }
+      .menu a {
+         color: orange;
+         text-decoration: none;
+         margin-left: 2em;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .one,.two,.tri {
+         height: 100vh;
+         width: 100vw;
+         color: rgb(255, 255, 255);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+      }
+      .one {
+         background-color: rgb(225, 58, 58);
+      }
+      .two {
+         background-color: goldenrod;
+      }
+      .tri {
+         background-color: lightsalmon;
+      }
+      .q {
+         padding: 50px;
+         border: 5px solid firebrick;
+         border-radius: 500px;
+         transition: all ease-in .20s;
+      }
+      .q:hover {
+         box-shadow: 7px 3px 10px 5px darkred;
+         transform: translate(-382px -565px);
+      }
+
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <h1>Завод Атомных Бомб</h1>
+    <div class="menu">
+       <a href="#хоме">Дом Бомбы</a>
+       <a href="#куэшенс">Вопросы к Бомбе</a>
+       <a href="#обоут">О Бомбе</a>
+    </div>
+   </div> 
+   <div class="one" id="хоме">
+      <div class="q">Здесь живет Бомба.</div>
+   </div>
+   <div class="two" id="куэшенс">
+      <div class="q">Здесь Бомба отвечает на вопросы.</div>
+   </div>
+   <div class="tri" id="обоут">
+      <div class="q">Портфолио Бомбы.</div>
+   </div>
+</body>
+</html> 

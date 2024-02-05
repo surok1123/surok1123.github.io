@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(83, 54, 54) ;
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        .tree {
+            position: absolute; 
+            bottom: 30%;   
+            left: 45%;
+        }
+        .field {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            z-index: 9999;
+            font-family: rum;
+        }
+        @font-face {
+            font-family: rum;
+            src: url("rum.otf") format("opentype");
+        }
+        h1::first-letter {
+            color: brown;
+        }
+        .snowflake {
+            height: 50px;
+            width: 50px;
+            background-image: url('snowflake.png');
+            background-size: cover ;
+            position: absolute ;
+            top: 0px;
+        }
+        @keyframes falling {
+            to {
+                top: 100vh;
+                transform: rotate(720deg);
+            }
+        }
+        .snowflake:nth-child(1) {
+            left: 9vw;
+            animation: falling 12s .2s linear infinite;
+        }
+        .snowflake:nth-child(2) {
+            left: 81vw;
+            animation: falling 15s .4s linear infinite;
+        }
+        .snowflake:nth-child(3) {
+            left: 66vw;
+            animation: falling 10s .7s linear infinite;
+        }
+        .snowflake:nth-child(4) {
+            left: 35vw;
+            animation: falling 16s .2s linear infinite;
+        }
+        .snowflake:nth-child(5) {
+            left: 89vw;
+            animation: falling 8s .3s linear infinite;
+        }
+        .snowflake:nth-child(6) {
+            left: 21vw;
+            animation: falling 12s .5s linear infinite;
+        }
+        .snowflake:nth-child(7) {
+            left: 70vw;
+            animation: falling 11s .6s linear infinite;
+        }
+        .snowflake:nth-child(8) {
+            left: 37vw;
+            animation: falling 10s .1s linear infinite;
+        }
+        .snowflake:nth-child(9) {
+            left: 57vw;
+            animation: falling 17s .9s linear infinite;
+        }
+        .snowflake:nth-child(10) {
+            left: 48vw;
+            animation: falling 13s .4s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <img src="tree.png" alt="Елка" class="tree" width="400">
+    <img src="field.png" alt="Поле" class="field">
+    <div class="card">
+        <h1>С наступившим Новым Годом!</h1>
+    </div>
+    
+    <!-- <script>
+        let a = null
+        console.log(a)
+        if (a == null) {
+            console.log('Истина!!!!!')
+        } else if (a == 1) {
+            console
+        }
+        else {
+            console.log('false!!!!!')
+            
+
+        }
+        let b = prompt('Введите что-то')
+        while (b != 'exit') {
+            console.log('Hi!')
+            b = prompt('Введите что-то')
+        }
+    </script> -->
+</body> 
+</html>
